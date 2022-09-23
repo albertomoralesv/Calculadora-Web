@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Calculator app</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="container" id="main_container">
+            <div class="container" id="top_container">
+                <div class="row">
+                    <div class="col ps-0">
+                        <p class="Calc" id="calc_title">calc</p>
+                    </div>
+                    <div class="col">
+                        <div class="row justify-content-end">
+                            <div class="col-auto pe-1 pt-1">
+                                <p class="theme_" id="theme_title"> THEME </p>
+                            </div>
+                            <div class="col-auto ps-0">
+                                <div class="btn-group " >
+                                    <button id="t1" type="button" class="btn btn-secondary tnumber active_theme">1</button>
+                                    <button id="t2" type="button" class="btn btn-secondary tnumber">2</button>
+                                    <button id="t3" type="button" class="btn btn-secondary tnumber">3</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container my-3" id="mid_container">
+                <p id="screen_number">0</p>
+            </div>
+            <div class="container my-3 p-3" id="bot_container">
+                <div class="row mb-3 justify-content-center">
+                    <div class="col-auto">
+                        <button class="key" id="7">7</button>
+                    </div>
+                    <div class="col-auto">
+                        <button class="key" id="8">8</button>
+                    </div>
+                    <div class="col-auto">
+                        <button class="key" id="9">9</button>
+                    </div>
+                    <div class="col-auto">
+                        <button class="key special_key" id="DEL">DEL</button>
+                    </div>
+                </div>
+                <div class="row mb-3 justify-content-center">
+                    <div class="col-auto">
+                        <button class="key" id="4">4</button>
+                    </div>
+                    <div class="col-auto">
+                        <button class="key" id="5">5</button>
+                    </div>
+                    <div class="col-auto">
+                        <button class="key" id="6">6</button>
+                    </div>
+                    <div class="col-auto">
+                        <button class="key" id="+">+</button>
+                    </div>
+                </div>
+                <div class="row mb-3 justify-content-center">
+                    <div class="col-auto">
+                        <button class="key" id="1">1</button>
+                    </div>
+                    <div class="col-auto">
+                        <button class="key" id="2">2</button>
+                    </div>
+                    <div class="col-auto">
+                        <button class="key" id="3">3</button>
+                    </div>
+                    <div class="col-auto">
+                        <button class="key" id="-">-</button>
+                    </div>
+                </div>
+                <div class="row mb-3 justify-content-center">
+                    <div class="col-auto">
+                        <button class="key" id=".">.</button>
+                    </div>
+                    <div class="col-auto">
+                        <button class="key" id="0">0</button>
+                    </div>
+                    <div class="col-auto">
+                        <button class="key" id="slash">/</button>
+                    </div>
+                    <div class="col-auto">
+                        <button class="key pt-3" id="*">*</button>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-6">
+                        <button class="key special_key last_row" id="RESET">RESET</button>
+                    </div>
+                    <div class="col-6">
+                        <button class="key last_row" id="igual">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </body>
+
+</html>
